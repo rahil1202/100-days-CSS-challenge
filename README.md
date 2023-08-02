@@ -1,8 +1,10 @@
 # 100 Days CSS Challenge
 
-![100 Days CSS Challenge Logo](logo.png)
+![100 Days CSS Challenge Logo]
+![image](https://github.com/rahil1202/100-days-CSS-challenge/assets/104057403/eca58d73-b02c-4935-b01c-3432b058bbae)
 
-Welcome to my 100 Days CSS Challenge! In this challenge, I will be participating in the popular 100 Days CSS Challenge, creating exciting CSS designs and animations daily. All of my creations will be showcased on CodePen, and I will also upload them to GitHub daily to track my progress.
+
+Welcome to my 100 Days CSS Challenge! In this challenge, I will be participating in the popular 100 Days CSS Challenge[LINK](https://100dayscss.com/days/1/), creating exciting CSS designs and animations daily. All of my creations will be showcased on CodePen, and I will also upload them to GitHub daily to track my progress.
 
 ## 🌟 Objective
 
@@ -31,4 +33,7 @@ You can view each CSS challenge in action and play around with the code on my Co
 While this challenge is personal, I encourage others to join in and participate in their own 100 Days CSS Challenge. Feel free to fork this repository and create your own daily CSS designs. If you'd like to collaborate or have any suggestions, don't hesitate to reach out to me.
 
 
-Thank you for following my 100 Days CSS Challenge! I hope you find inspiration in my CSS creations, and I look forward to growing and improving as a CSS developer through this challenge. If you have any questions or want to share your own CSS challenge journey, feel free to [get in touch with me](mailto:rahilisvahora@gmail.com). Happy coding!
+Thank you for following my 100 Days CSS Challenge! I hope you find inspiration in my CSS creations, and I look forward to growing and improving as a CSS developer through this challenge. If you have any questions or want to share your own CSS challenge journey, feel free to [get in touch with me](mailto:rahilisvahora@gmail.com). 
+
+Happy coding! 🤖
+
