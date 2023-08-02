@@ -1,0 +1,148 @@
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+// use only the available space inside the 400x400 frame
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #fff;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.card{
+  width: 400px;
+  height: 400px;
+  background-color: #E56262;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle{
+  width: 90px;
+  height: 90px;
+  background-color: #fff;
+  border-radius: 50%;
+  animation: gota 4s ease-in-out infinite;
+}
+
+.second-circle{
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 50%;
+  animation: gota-second 4s ease-in-out infinite;
+}
+
+.third-circle{
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 50%;
+  animation: gota-third 4s ease-in-out infinite;
+
+
+}
+
+.shadow{
+  box-shadow: 4px 4px 12px 0px rgba(0,0,0,0.5);
+}
+
+
+@keyframes gota {
+  0%{
+    transform: scale(0, 0);
+  }
+  20%{
+    transform: scale(1, 1);
+  }
+  60%{
+    transform: scale(1, 1);
+  }
+  80%{
+    transform: scale(1, 1);
+  }
+  100%{
+    transform: scale(0, 0);
+  }
+}
+
+@keyframes gota-second {
+  0%{
+    transform: scale(0, 0);
+  }
+  20%{
+    transform: scale(0, 0);
+  }
+  40%{
+    transform: scale(1, 1);
+  }
+  60%{
+    transform: scale(1, 1);
+  }
+  80%{
+    transform: scale(0, 0);
+  }
+  100%{
+    transform: scale(0, 0);
+  }
+}
+
+@keyframes gota-third {
+  0%{
+    transform: scale(0, 0);
+  }
+  20%{
+    transform: scale(0, 0);
+  }
+  40%{
+    transform: scale(0, 0);
+  }
+  45%{
+    transform: scale(1, 1);
+  }
+  60%{
+    transform: scale(1, 1);
+  }
+  70%{
+    transform: scale(0, 0);
+  }
+  80%{
+    transform: scale(0, 0);
+  }
+  100%{
+    transform: scale(0, 0);
+  }
+}

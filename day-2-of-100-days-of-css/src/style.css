@@ -1,0 +1,91 @@
+$time: 0.4s;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.frame {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 25rem;
+	aspect-ratio: 1;
+	border-radius: 1.25rem;
+	box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	background: #fff;
+	color: #333;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+input[type="checkbox"] {
+	appearance: none;
+}
+
+.container {
+	background: #3ead86;
+	width: 100%;
+	aspect-ratio: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.menu {
+	position: relative;
+	cursor: pointer;
+	width: 6.25rem;
+	aspect-ratio: 1;
+}
+
+.menuLine {
+	background: white;
+	height: 0.5rem;
+	aspect-ratio: 10;
+	position: absolute;
+	border-radius: 3px;
+	box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1);
+	content: "";
+}
+.top {
+	left: 10px;
+	top: 24px;
+	transition: top $time, transform $time;
+	transition-delay: $time, 0s;
+}
+.mid {
+	left: 10px;
+	top: 46px;
+	transform: scale(1);
+	transition: transform $time;
+}
+.bottom {
+	left: 10px;
+	top: 68px;
+	transition: top $time, transform $time;
+	transition-delay: $time, 0s;
+}
+
+input[type="checkbox"]:checked ~ .menu {
+	.top {
+		top: 46px;
+		transform: rotate(45deg);
+		transition: top $time, transform $time;
+		transition-delay: 0s, $time;
+	}
+	.mid {
+		transform: scale(0);
+		transition: transform $time;
+	}
+	.bottom {
+		top: 46px;
+		transform: rotate(135deg);
+		transition: top $time, transform $time;
+		transition-delay: 0s, $time;
+	}
+}
