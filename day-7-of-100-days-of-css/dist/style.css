@@ -1,0 +1,247 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+// use only the available space inside the 400x400 frame
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #264057;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	
+}
+
+.panel{
+	position:absolute;
+	top:50px;
+	left:50px;
+	width:300px;
+	height:300px;
+	background:#fff;
+	overflow:hidden;
+	z-index:1;
+	transition:1.5s;
+	border-radius:5px;	
+}
+
+.frame.active .panel{
+	left:180px;
+}
+
+.menu{
+	position:absolute;
+	top:65px;
+	left:60px;
+	height:270px;
+	width:200px;
+	z-index:0;
+	background:#43627D;
+	transition:2s;
+}
+
+.frame.active .menu{
+	left:30px;
+	
+}
+
+.menu ul{
+	list-style:none;
+	display:grid;
+	align-items:center;
+	grid-template-rows:repeat(5, 1fr);
+	height:270px;
+	padding:5px 0;
+}
+
+.menu ul li{
+	height:100%;
+	display:flex;
+	align-items:center;
+	padding:0 15px;
+	gap:8px;
+	cursor:pointer
+}
+
+.menu ul li a{
+	font-size:14px;
+	font-weight:700;
+}
+
+.menu ul li:hover{
+	background:#324d64;
+}
+
+.menu ul li{
+	color:#93B2CD;
+}
+
+.navigation{
+	background:#5F98CD;
+	height:60px;
+	color:#fff;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	padding:0 20px;
+}
+	
+
+	
+.menu-icon{
+	position: relative;
+	width: 29px;
+	height: 15px;
+	top: 0px;
+	left: 0px;
+	cursor:pointer;
+	transition:1s;
+}
+
+.menu-icon:hover .dot-1{
+	background:rgba(255,255,255,.80);
+}
+.menu-icon:hover .dot-2{
+	background:rgba(255,255,255,.80);
+}
+.menu-icon:hover .circle{
+	background:rgba(255,255,255,.80);
+}
+
+.dot-1{
+	position:absolute;
+	top:12px;
+	left:0;
+	width:30px;
+	height:3px;
+	background:rgba(255,255,255,.30);
+	transition:1s;
+}
+
+.dot-2{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:19px;
+	height:3px;
+	background:rgba(255,255,255,.30);
+	transition:1s;
+}
+
+.circle{
+	position: absolute;
+	height: 7px;
+	width: 7px;
+	border-radius: 4px;
+	top: -2px;
+	right: 0;
+	background:rgba(255,255,255,.30);
+	transition:1s;
+}
+
+.title{
+	font-size:14px;
+	font-weight:600;
+}
+
+.bx-search-alt{
+	font-size:27px;
+	color:rgba(255,255,255,.30);
+	cursor:pointer;
+	transition:1s ease;
+}
+
+.bx-search-alt:hover{
+	color:rgba(255,255,255);
+}
+
+.input-search{
+	position:absolute;
+	opacity:0;
+	right:40px;
+	width:75%;
+	outline:none;
+	border:none;
+	border-radius:16px;
+	padding:7px 0;
+	visibility:hidden;
+	transition:.5s;
+}
+
+.input-search.active{
+	opacity:1;
+	visibility:visible;
+	right:60px;
+}
+
+.input-search::placeholder{
+	font-size:14px;
+	padding:0 15px;
+}
+
+.line{
+	position:absolute;
+	height:100%;
+	width:4px;
+	left:20px;
+	top:60px;
+	background:rgba(0,0,0,.1);
+}
+
+.circle-post{
+	background:#fff;
+	width:11px;
+	height:11px;
+	border-radius:50%;
+	border:2px solid #5F98CD;
+	position:absolute;
+	top:5px;
+	left:-23px;
+	box-sizing:border-box;
+}
+
+.notifications{
+	width:80%;
+}
+
+.notification{
+	position:relative;
+	left:40px;
+	margin:20px 0;
+	cursor:pointer;
+	animation: scrollUp 2s ease;
+}
+
+@keyframes scrollUp{
+	0%{
+		transform:translateY(250px);
+	}
+}
+
+.notification:hover{
+	color:#5F98CD;
+}
+
+.time{
+	font-size:12px;
+}
+
+.post{
+	font-size:15px;
+}
