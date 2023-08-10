@@ -1,7 +1,7 @@
 ## 👨‍💻100 Days CSS Challenge
 <div align="center">
 
-![image](https://github.com/rahil1202/100-days-CSS-challenge/assets/104057403/eca58d73-b02c-4935-b01c-3432b058bbae)
+![image](https://github.com/rahil1202/100-days-CSS-challenge/assets/104057403/eca58d73-b02c-4935-b01c-3432b058bbae)[](https://100dayscss.com/days/1/)
 
 </div>
 
